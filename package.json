@@ -1,0 +1,33 @@
+{
+  "name": "@decent-algorithms/reason-examples",
+  "version": "0.0.1",
+  "description": "Reason examples",
+  "esy": {
+    "build": "pesy"
+  },
+  "buildDirs": {
+    "test": {
+      "require": ["reason-examples.lib"],
+      "main": "Test",
+      "name": "Test.exe"
+    },
+    "src": {
+      "name": "reason-examples.lib",
+      "namespace": "ReasonExamples"
+    }
+  },
+  "scripts": {
+    "test": "esy x Test.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@esy-ocaml/reason": "^3.3.0",
+    "refmterr": "*",
+    "ocaml": "^4.3.0",
+    "pesy": "*"
+  },
+  "devDependencies": {
+    "@esy-ocaml/merlin": "*",
+    "ocaml": "~4.6.0"
+  }
+}
