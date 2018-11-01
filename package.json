@@ -13,7 +13,8 @@
     },
     "src": {
       "name": "reason-examples.lib",
-      "namespace": "ReasonExamples"
+      "namespace": "ReasonExamples",
+      "includeSubdirs": "unqualified"
     }
   },
   "scripts": {
@@ -24,7 +25,7 @@
     "@esy-ocaml/reason": "^3.3.0",
     "refmterr": "*",
     "ocaml": "^4.3.0",
-    "pesy": "*"
+    "pesy": "^0.3.14"
   },
   "devDependencies": {
     "@esy-ocaml/merlin": "*",
